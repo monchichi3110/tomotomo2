@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>トモダチコレクションの世界 - 大学課題特設サイト</title>
+    <!-- Google Fontsからゲーム風・ポップなフォントを読み込み -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ヘッダー：ゲームのタイトル画面風 -->
+    <header class="game-header">
+        <h1 class="game-title">トモコレで作る理想のコミュニティー<br><span class="subtitle">〜僕らの島、のぞいてみん？〜</span></h1>
+        <p class="catchphrase">「キャラクター同士のつながりをデザインする」</p>
+    </header>
+
+    <!-- ナビゲーション：4ページ構成に変更 -->
+    <nav class="game-menu">
+        <button class="menu-btn active" data-target="top">トップ</button>
+        <button class="menu-btn" data-target="about">トモコレとは</button>
+        <button class="menu-btn" data-target="compare">島比較コーナー</button>
+        <button class="menu-btn" data-target="summary">まとめ</button>
+    </nav>
+
+    <!-- メインコンテンツエリア -->
+    <main class="game-container">
+
+        <!-- 1. トップページ -->
+        <section id="top" class="page-content active">
+            <h2>サイト概要</h2>
+            <div class="card bg-purple">
+                <p>このサイトは、ニンテンドーの傑作異色ゲーム『トモダチコレクション（トモコレ）』の尽きない魅力を伝えるための特設サイトです。</p>
+                <p>トモコレを知らない人でも、その独特な世界観を楽しめるよう構成しています。さらに後半では、「私」と「友人」が実際に作った2つの島を徹底比較！プレイヤーの数だけ生まれる「異なる物語」の面白さに迫ります。</p>
+            </div>
+
+            <!-- トップ画面のスポット紹介（おしゃれな10選） -->
+            <div class="spot-section" style="margin-top: 35px;">
+                <h3 style="font-family: 'Mochiy Pop One', sans-serif; text-align: center; margin-bottom: 10px;">🗺️ 島のトップ画面を彩る！主要スポット10選</h3>
+                <p class="intro-text" style="background:#FFFDEB; text-align: center; padding: 10px; border-radius: 10px; font-weight: bold;">
+                    島マップを開くとポコポコ建っている、Miiたちの生活に欠かせない魅力的な施設をご紹介！
+                </p>
+                
+                <div class="spot-grid">
+                    <!-- 1. Miiアパート -->
+                    <div class="spot-card">
+                        <div class="spot-img-box">
+                            <span>【アパート画像】</span>
+                            <!-- <img src="spot1.jpg" alt="Miiアパート"> -->
+                        </div>
+                        <div class="spot-info">
+                            <h4>🏢 Miiアパート</h4>
+                            <p>すべての住人が暮らす島の中心地。部屋をのぞくと、一人で歌っていたり、床をゴロゴロ転がっていたりするシュールな日常が見られます。</p>
+                        </div>
+                    </div>
+
+                    <!-- 2. 市役所 -->
+                    <div class="spot-card">
+                        <div class="spot-img-box">
+                            <span>【市役所画像】</span>
+                            <!-- <img src="spot2.jpg" alt="市役所"> -->
+                        </div>
+                        <div class="spot-info">
+                            <h4>🏫 市役所</h4>
+                            <p>新しいMiiの登録や、登録情報の変更、住人リストの確認、アルバムの閲覧などが行える、島の管理人（プレイヤー）の拠点です。</p>
+                        </div>
+                    </div>
+
+                    <!-- 3. たべものショップ -->
+                    <div class="spot-card">
+                        <div class="spot-img-box">
+                            <span>【たべもの画像】</span>
+                            <!-- <img src="spot3.jpg" alt="たべものショップ"> -->
+                        </div>
+                        <div class="spot-info">
+                            <h4>🍳 たべものショップ</h4>
+                            <p>お腹をすかせたMiiたちにプレゼントする食べ物を買うお店。日替わりで並ぶ美味しそうなメニューは見てるだけで楽しい！</p>
+                        </div>
+                    </div>
+
+                    <!-- 4. お洋服ショップ -->
+                    <div class="spot-card">
+                        <div class="spot-img-box">
+                            <span>【お洋服画像】</span>
+                            <!-- <img src="spot4.jpg" alt="お洋服ショップ"> -->
+                        </div>
+                        <div class="spot-info">
+                            <h4>👕 お洋服ショップ</h4>
+                            <p>カジュアル、フォーマル、果てはユニークな着ぐるみまで！Miiを着飾るための多種多様なファッションアイテムが手に入ります。</p>
+                        </div>
+                    </div>
+
+                    <!-- 5. インテリアショップ -->
+                    <div class="spot-card">
+                        <div class="spot-img-box">
+                            <span>【お部屋画像】</span>
+                            <!-- <img src="spot5.jpg" alt="インテリアショップ"> -->
+                        </div>
+                        <div class="spot-info">
+                            <h4>🛏️ インテリアショップ</h4>
+                            <p>Miiの部屋の模様替えに使う壁紙や家具を買うお店。和室、宇宙空間、お城風など、個性を爆発させられる空間が作れます。</p>
+                        </div>
+                    </div>
+
+                    <!-- 6. 音楽堂 -->
+                    <div class="spot-card">
+                        <div class="spot-img-box">
+                            <span>【音楽堂画像】</span>
+                            <!-- <img src="spot6.jpg" alt="音楽堂"> -->
+                        </div>
+                        <div class="spot-info">
+                            <h4>🎤 音楽堂</h4>
+                            <p>歌を覚えたMiiたちが華やかなステージに立ち、演歌、ロック、アイドルソングなどをカメラ目線で熱唱してくれます。</p>
+                        </div>
+                    </div>
+
+                    <!-- 7. 相性測定館 -->
+                    <div class="spot-card">
+                        <div class="spot-img-box">
+                            <span>【相性館画像】</span>
+                            <!-- <img src="spot7.jpg" alt="相性測定館"> -->
+                        </div>
+                        <div class="spot-info">
+                            <h4>🔮 相性測定館</h4>
+                            <p>住人同士の「友達相性」や「恋愛相性」を生年月日から勝手に占う館。意外な二人、危険な二人の結果にドキドキが止まりません。</p>
+                        </div>
+                    </div>
+
+                    <!-- 8. 恵みの噴水 -->
+                    <div class="spot-card">
+                        <div class="spot-img-box">
+                            <span>【噴水画像】</span>
+                            <!-- <img src="spot8.jpg" alt="恵みの噴水"> -->
+                        </div>
+                        <div class="spot-info">
+                            <h4>⛲ 恵みの噴水</h4>
+                            <p>毎日1回、島民全員が集まって「募金」をしてくれる場所。朝市が開催されたり、住人たちがのんびりお喋りを楽しむ憩いの広場です。</p>
+                        </div>
+                    </div>
+
+                    <!-- 9. 恵みの砂浜 -->
+                    <div class="spot-card">
+                        <div class="spot-img-box">
+                            <span>【砂浜画像】</span>
+                            <!-- <img src="spot9.jpg" alt="恵みの砂浜"> -->
+                        </div>
+                        <div class="spot-info">
+                            <h4>🏖️ 恵みの砂浜</h4>
+                            <p>波の音を聞きながらMiiがのんびり散歩をしたり、海の向こうを眺めたりするエモーショナルな場所。時には恋のイベントも発生します。</p>
+                        </div>
+                    </div>
+
+                    <!-- 10. 質問広場 -->
+                    <div class="spot-card">
+                        <div class="spot-img-box">
+                            <span>【質問広場】</span>
+                            <!-- <img src="spot10.jpg" alt="質問広場"> -->
+                        </div>
+                        <div class="spot-info">
+                            <h4>📢 質問広場</h4>
+                            <p>住人全員が集まり、プレイヤーの質問（「今お腹空いてる人ー？」など）に多数決の挙手で答えてくれる、一体感のある広場です。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. トモコレとは -->
+        <section id="about" class="page-content">
+            <h2>トモコレとは？</h2>
+            <div class="grid">
+                <div class="card bg-red">
+                    <h3>基本情報</h3>
+                    <p><strong>発売日：</strong>2009年6月18日（DS版）/ 2013年4月18日（新生活・3DS版）</p>
+                    <p><strong>ゲーム概要：</strong>あなたの作った「Mii（そっくりさん）」たちが、海に浮かぶ小さな島で自由に暮らす「そっくりトモダチコミュニケーション」ゲームです。</p>
+                    <p>以下の「4つの軸（質問）」の組み合わせで、住人の行動パターンがガラリと変わります！</p>
+                    <ul style="margin: 10px 0; font-size: 0.9rem; list-style-type: '💡 ';">
+                        <li><strong>行動基準：</strong>じっくり考えて動く？すぐ行動する？</li>
+                        <li><strong>表現方法：</strong>感情をストレートに出す？マイルドに伝える？</li>
+                        <li><strong>考え方：</strong>現実的で合理的？それとも直感的で個性的？</li>
+                        <li><strong>自分の性格：</strong>自分が周りに合わせる？自分を突き通す？</li>
+                    </ul>
+                    <p>これらによって「ナゴミ系・マイルド」「ドライ系・ハキハキ」など16タイプに分かれ、喋り方や部屋での過ごし方に影響します。</p>
+                </div>
+                <div class="card bg-green">
+                    <h3>どのような遊びができるの？</h3>
+                    <ul>
+                        <li>自分や友達、芸能人のMiiを登録して住人にする</li>
+                        <li>住人に食べ物や服、お部屋をプレゼントして喜ばせる</li>
+                        <li>悩み事を解決してあげたり、ミニゲームで一緒に遊ぶ</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- トモコレの魅力＆特徴を分かりやすく紹介するエリア -->
+            <h3 style="margin: 30px 0 15px 0; font-family: 'Mochiy Pop One', sans-serif;">トモコレの4大特徴</h3>
+            <div class="feature-grid">
+                <div class="feature-item">
+                    <span class="badge badge-purple">1</span>
+                    <h3>住人作成機能</h3>
+                    <p>顔のパーツだけでなく、声の高さ、話し方、さらには内面的な「性格」まで細かく設定してそっくりさんを作めます。</p>
+                </div>
+                <div class="feature-item">
+                    <span class="badge badge-red">2</span>
+                    <h3>性格の種類</h3>
+                    <p>行動派、慎重派、マイルド、クールなど、いくつかの質問に答えるだけで、独自の性格タイプが自動判定されます。</p>
+                </div>
+                <div class="feature-item">
+                    <span class="badge badge-green">3</span>
+                    <h3>住人同士の人間関係</h3>
+                    <p>住人たちは勝手に部屋を行き来し、友達になり、時には恋に落ちて告白やプロポーズ、結婚・子育てまで行います！</p>
+                </div>
+                <div class="feature-item">
+                    <span class="badge badge-blue">4</span>
+                    <h3>予測できないイベント</h3>
+                    <p>誰と誰が仲良くなるかは誰にも予想できません。だからこそ、プレイヤーごとに100%異なる「世界に一つだけの島」が完成します。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. 島比較コーナー -->
+        <section id="compare" class="page-content">
+            <h2>島比較コーナー</h2>
+            <p class="intro-text">プレイヤーの頭の中や人間関係がそのまま形になる「島」。私と友人の島の違いを細かく分析しました！</p>
+
+            <!-- 比較テーブル -->
+            <div class="table-container">
+                <table class="compare-table">
+                    <thead>
+                        <tr>
+                            <th>比較項目</th>
+                            <th class="my-island-head">まるも島</th>
+                            <th class="friend-island-head">おべん島</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>住人数</strong></td>
+                            <td>45人（まだまだ増やす予定！）</td>
+                            <td>32人（お気に入りの精鋭メンバー）</td>
+                        </tr>
+                        <tr>
+                            <td><strong>住人の構成比</strong></td>
+                            <td>現実の友達30%：アニメ・芸能人70%</td>
+                            <td>現実の友達80%：先生・有名人20%</td>
+                        </tr>
+                        <tr>
+                            <td><strong>島の特徴</strong></td>
+                            <td>二次元と三次元が交ざり合う異次元カオス空間</td>
+                            <td>現実の学校やコミュニティをそのまま再現した島</td>
+                        </tr>
+                        <tr>
+                            <td><strong>人間関係（相関図）</strong></td>
+                            <td>アニメキャラと現実の自分が付き合うなど大波乱</td>
+                            <td>現実とは全く違うペアが親友になり意外な発見が多め</td>
+                        </tr>
+                        <tr>
+                            <td><strong>全体の雰囲気</strong></td>
+                            <td>毎日誰かが告白したり喧嘩するお祭り騒ぎな島</td>
+                            <td>みんながマイルドでのんびり暮らすアットホームな島</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- 画像・動画掲載エリア -->
+            <div class="media-section">
+                <h3>島の様子 ＆ ビジュアル比較</h3>
+                
+                <div class="card bg-green wide-comment-box">
+                    <h3>ここが面白い！相関図＆性格別の見どころ比較</h3>
+                    <p><strong>私の島の場合：</strong>現実では絶対に接点のないキャラ同士が大親友になるカオスなパラレルワールド！性格分布も偏りがあり、特定のタイプばかりが集まるお祭り騒ぎな縮図になっています。</p>
+                    <p style="margin-top: 10px;"><strong>友人の島の場合：</strong>現実のクラスの人間関係をベースにしつつも、ゲーム内では意外なペアが急接近！全員の性格バランスが綺麗に分散しており、のんびり安定したドラマが起きています。</p>
+                </div>
+
+                <div class="islands-flex-container">
+                    
+                    <!-- ==================== 私の島（まるも島） ==================== -->
+                    <div class="island-block my-island-block">
+                        <div class="island-header-title my-island-head">まるも島</div>
+                        
+                        <!-- 1. 上部分：大きな画像2枚（相関図 ＆ 書類別画像） -->
+                        <h5>📊 島の人間関係・相関図 ＆ 性格分布（計2枚）</h5>
+                        <div style="display: flex; flex-direction: column; gap: 15px; margin-bottom: 25px;">
+                            <div class="photo-placeholder main-chart-box" style="max-width: 100%; margin-bottom: 0;">
+                                <p>【私の島：相関図の写真】<br><span class="sub-text">（後でここに img タグを入れます）</span></p>
+                                <!-- <img src="my-chart.jpg" alt="私の島 相関図"> -->
+                            </div>
+                            <div class="photo-placeholder main-chart-box" style="max-width: 100%; margin-bottom: 0;">
+                                <p>【私の島：書類別の画像（性格など）】<br><span class="sub-text">（後でここに img タグを入れます）</span></p>
+                                <!-- <img src="my-document.jpg" alt="私の島 書類別画像"> -->
+                            </div>
+                        </div>
+
+                        <!-- 2. 下部分：島の様子6枚 -->
+                        <h5>🏝️ 島の日常・スクショ（画像または自動動画 6枚）</h5>
+                        <div class="gallery-grid" style="grid-template-columns: repeat(2, 1fr);">
+                            <div class="photo-placeholder gallery-item"><p>【私の島：画像1】</p></div>
+                            <div class="photo-placeholder gallery-item"><p>【私の島：画像2】</p></div>
+                            <div class="photo-placeholder gallery-item"><p>【私の島：画像3】</p></div>
+                            <div class="photo-placeholder gallery-item"><p>【私の島：画像4】</p></div>
+                            <div class="photo-placeholder gallery-item"><p>【私の島：画像5】</p></div>
+                            <div class="photo-placeholder gallery-item"><p>【私の島：画像6】</p></div>
+                        </div>
+                    </div>
+
+                    <!-- ==================== 友人の島（おべん島） ==================== -->
+                    <div class="island-block friend-island-block">
+                        <div class="island-header-title friend-island-head">おべん島</div>
+                        
+                        <!-- 1. 上部分：大きな画像2枚（相関図 ＆ 書類別画像） -->
+                        <h5>📊 島の人間関係・相関図 ＆ 性格分布（計2枚）</h5>
+                        <div style="display: flex; flex-direction: column; gap: 15px; margin-bottom: 25px;">
+                            <div class="photo-placeholder main-chart-box" style="max-width: 100%; margin-bottom: 0;">
+                                <p>【友人の島：相関図の写真】<br><span class="sub-text">（後でここに img タグを入れます）</span></p>
+                                <!-- <img src="friend-chart.jpg" alt="友人の島 相関図"> -->
+                            </div>
+                            <div class="photo-placeholder main-chart-box" style="max-width: 100%; margin-bottom: 0;">
+                                <p>【友人の島：書類別の画像（性格など）】<br><span class="sub-text"><img src="images/kaoyon.png" alt="性格別"></span></p>
+                                <!-- <img src="friend-document.jpg" alt="友人の島 書類別画像"> -->
+                            </div>
+                        </div>
+
+                        <!-- 2. 下部分：島の様子6枚 -->
+                        <h5>🏝️ 島の日常・スクショ（画像または自動動画 6枚）</h5>
+                        <div class="gallery-grid" style="grid-template-columns: repeat(2, 1fr);">
+                            <div class="photo-placeholder gallery-item"><p>【友人の島：画像1】</p></div>
+                            <div class="photo-placeholder gallery-item"><p>【友人の島：画像2】</p></div>
+                            <div class="photo-placeholder gallery-item"><p>【友人の島：画像3】</p></div>
+                            <div class="photo-placeholder gallery-item"><p>【友人の島：画像4】</p></div>
+                            <div class="photo-placeholder gallery-item"><p>【友人の島：画像5】</p></div>
+                            <div class="photo-placeholder gallery-item"><p>【友人の島：画像6】</p></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        
+        <!-- 4. まとめ -->
+        <section id="summary" class="page-content">
+            <h2>まとめ</h2>
+            <div class="card bg-purple">
+                <h3>比較して分かったこと</h3>
+                <p>同じゲーム、同じシステムを使っていても、登録する住人の種類やプレイヤーの観察の仕方によって、島の雰囲気や人間関係が全く異なるものになることが分かりました。</p>
+            </div>
+            <div class="card bg-red" style="margin-top: 20px;">
+                <h3>トモコレが教えてくれる面白さ</h3>
+                <p>ゲームが用意した決まったシナリオを進めるのではなく、**「プレイヤーごとに独自の物語が自動で生まれ続けること」**。これこそが、発売から年月が経ってもトモダチコレクションが名作として語り継がれる最大の理由です。</p>
+                <p>もしあなたなら、どんな住人を集めて、どんな物語を紡ぎますか？</p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- フッター -->
+    <footer class="game-footer">
+        <p>&copy; 2026 トモコレで作る理想のコミュニティ. amru&kao.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
